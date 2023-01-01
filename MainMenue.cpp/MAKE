@@ -1,0 +1,6 @@
+all:
+
+compile:
+        g++ -Isrc/include -c main2.cpp
+link:
+        g++ main2.o -o menu  -Lsrc/lib -lsfml-graphics -lsfml-window -lsfml-system

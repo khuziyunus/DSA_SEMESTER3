@@ -1,0 +1,11 @@
+
+
+all:
+compile:
+	g++ -Isrc/include -c main.cpp
+	 
+
+linke:
+	g++ main.o -o sorting_visuliser -Lsrc/lib -lsfml-graphics -lsfml-window -lsfml-system
+
+./sorting_visuliser.exe

@@ -1,0 +1,25 @@
+
+
+all:
+compile:
+	g++ -Isrc/include -c main.cpp
+	g++ -Isrc/include -c main.cpp menu.cpp  
+linke:
+	g++ main.o menu.o -o main -Lsrc/lib -lsfml-graphics -lsfml-window -lsfml-system
+	
+
+#Use these 
+	g++ -Isrc/include -c main.cpp
+
+link:
+	g++ main.o -o main -Lsrc/lib -lsfml-graphics -lsfml-window -lsfml-system
+
+
+g++ -Isrc/include -c main.cpp
+
+g++ sfml.o Menu.o -o sfml -Lsrc/lib -lsfml-graphics -lsfml-window -lsfml-system
+
+#this now now
+g++ -Isrc/include -c sfml.cpp Menu.cpp
+
+g++ sfml.o Menu.o -o sfml -Lsrc/lib -lsfml-graphics -lsfml-window -lsfml-system
